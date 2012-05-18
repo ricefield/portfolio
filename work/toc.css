@@ -1,0 +1,43 @@
+h1
+{
+	font-family: inherit;
+	font-size: 2em; 
+	line-height: 25%;
+}
+
+h2
+{
+	font-family: inherit;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 25%;
+}
+
+h3
+{
+	font-family: inherit;
+	font-size: 1.25em;
+	font-weight: bold;
+	line-height: 25%;
+
+}
+
+h4
+{
+	font-family: inherit;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 25%;
+}
+
+.bodytext
+{
+	font-family: inherit;
+	font-size: 1em;
+}
+
+#content
+{
+	width: 100%
+	
+}

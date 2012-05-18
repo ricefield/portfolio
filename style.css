@@ -1,0 +1,67 @@
+body 
+{
+	background-image:url('scarf.jpg');
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-attachment:fixed;
+}
+
+a:link 
+{
+	text-decoration:none;
+	color: #333333;
+}
+a:visited 
+{
+	text-decoration:none;
+	color: #666666;
+}
+a:hover 
+{
+	text-decoration:underline;
+	background: #cccccc;
+}
+a:active
+ {
+	text-decoration:underline;
+	color: #666666;
+	background: #cccccc;
+}
+
+#header
+{
+	position: absolute;
+	left: 50px;
+	top: 25px;
+	font-family: Garamond, Georgia, serif;
+	font-size: 4em;
+	background: #FFCB30
+}
+
+#nav
+{
+	font-family: Garamond, Georgia, serif;
+	font-size: 2em;
+	position: fixed;
+	top: 125px;
+	left: 75px;
+	
+
+}
+
+
+#main
+{
+	display: block;
+	position: absolute;
+	top: 100px;
+	left: 250px;
+	max-width: 50%;
+	
+	font-family: Garamond, Georgia, serif;
+	font-size: 1em;
+}
+
+#footer
+{
+}
