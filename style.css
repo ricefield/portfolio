@@ -9,23 +9,23 @@ body
 a:link 
 {
 	text-decoration:none;
-	color: #333333;
+	color: #666666;
 }
 a:visited 
 {
 	text-decoration:none;
-	color: #666666;
+	color: #AAB3AB;
 }
 a:hover 
 {
-	text-decoration:underline;
-	background: #cccccc;
+	text-decoration:none;
+	background: #FFCB30;
 }
 a:active
  {
 	text-decoration:underline;
 	color: #666666;
-	background: #cccccc;
+	background: #FFCB30;
 }
 
 #header
