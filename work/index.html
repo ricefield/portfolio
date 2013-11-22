@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="toc.css">
 <style type="text/css">
 	.dir {background: #cccccc;}
-	.
+	
 </style>
 
 <title>tien, jonathan/work</title>
@@ -36,45 +36,139 @@
 	
 	<div id="main">
 		<h1>Contents</h1>
-		<ul id="toc">
+
+		<h4><a href="#software">Software</a></h4>
+		<ul class="toc">
+			<li><a href="#attendanceproj">Attendance Project</a></li>
+			<li><a href="#hymnalAPI">HymnalAPI</a></li>
 			<li><a href="#calchat">CalChat</a></li>
-			<li><a href="#lifecheck">LifeCheck</a></li>
+			<!-- <li><a href="#lifecheck">LifeCheck</a></li> -->
 			<li><a href="#blind.ly">Blind.ly Messenger</a></li>
 			<li><a href="#tribal">Tribal Tech</a></li>
 			<li><a href="#crumbs">Crumbs</a></li>
-			<li><a href="#cloudtalk">Cloudtalk</a></li>
+			<!-- <li><a href="#cloudtalk">Cloudtalk</a></li> -->
 			<li><a href="#gloing">Gloing</a></li>
-			<li><a href="#ebay">eBay</a></li>
+			<!-- <li><a href="#ebay">eBay</a></li> -->
+		</ul>
+
+		<h4><a href="#print">Print</a></h4>
+		<ul class="toc">
+			<li><a href="#tracts">Verse Cards</a></li>
+			<li><a href="#hymnsheets">Hymn Sheets</a></li>
 			<li><a href="#coc">Christians on Campus</a></li>
 			<li><a href="#falcon">Saratoga Falcon</a></li>	
 		</ul>
 		<br>
+
+		<div id="attendanceproj">
+		<h2><a name="attendanceproj">Attendance Project</a></h2><hr>
+		<p class="bodytext">
+			In Fall 2012 I enrolled in the Full-time Training in Anaheim (FTTA), a 2-year Bible truth and church service training program based in Anaheim, CA. As part of my program, I was assigned to various services, one of which was the Attendance Project, an internally developed and maintained web application used by all the students and training administrators here at the FTTA.
+
+			<br><br>
+
+			Initially, the project was a poorly maintained PHP project that was mostly spaghetti code, and the team had no formal development process. The project had been poorly architected from the beginning, and ballooned over many years as a result of non-technical oversight. I drafted a <a href="ap/state.pdf">proposal [pdf]</a> to revamp, firstly, <a href="ap/devprocess.docx">the development process [docx]</a>, and secondly, the stack and architecture of the project, that is, a full rewrite of the application.
+
+			<br><br>
+
+			As a result, a formal development process was constructed, with spec, design, coding standards, testing, and code review. Furthermore, we decided to rewrite the entire application, introducing an MVC framework (Django), a better version control system (Git + GitLab), and other industry-standard best practices.
+
+			<br><br>
+
+			We are currently in the process of the rewrite. I currently serve simultaneously as a product manager, defining and driving our development process, organizing and prioritizing tasks and modules, and meeting with users and training administrators to gather feedback and requirements; as a lead developer, architecting and implementing a central module of the project; and as a sysadmin, setting up our internal Git server and issue tracker, deploying a Django web application, and keeping the server running. 
+
+		</p></div><br>
+
+		<div id="hymnalAPI">
+		<h2><a name="hymnalAPI">hymnalAPI</a></h2><hr>
+		<p class="bodytext">
+			During my winter interim of 2012, I decided use my free time to put together a project I had been wanting to build for awhile: an API for <a href="http://hymnal.net/">hymnal.net</a>. Hymnal.net is an online collection of hymns that I use often; I have often thought about various projects or utilities that could be built if the data on the site was machine-readable (case in point, many people have built scrapers to display the data in mobile appls and the like). However, instead of writing a scraper for every project that needed the hymn data, I thought I might as well go ahead and write an (unofficial) JSON API and take care of the problem once-for-all. 
+
+			<br><br>
+
+			Along the way, I was able to teach myself some new technologies: this was my first real project using Ruby (being more of a Python diehard), and I also got a chance to try the wonderful Sinatra microframework, as well as some useful Ruby libraries (e.g. Nokogiri). Lastly, I learned how to deploy on Heroku. Fun stuff. 
+
+			You can check out the hymnalAPI project on <a href="https://github.com/ricefield/hymnalAPI">GitHub</a> or live at: <a href="http://hymnalapi.herokuapp.com/">hymnalapi.herokuapp.com</a>
+			
+
+		</p></div><br>
+
+
+		<div id="tracts">
+		<h2><a name="tracts">Verse Cards</a></h2><hr>
+			<p class="bodytext">
+
+				A side project I worked on during my first term of the FTTA. I came up with the idea of having wallet-sized tracts a few years ago, thinking it would be nice to always have gospel materials on hand. Initial mockups didn't seem to work so well though, so the concept was dropped. 
+
+				<br><br>
+
+				Picking it up again, I decided on a simple format of having one verse and one footnote (from the <a href="http://recoveryversion.org">Recovery Version</a>), making sure to leave some space for contact info to be written. This ended up working well, though it still required a lot of kerning to get some text to fit properly. A very fun and rewarding project.
+
+				<br><br>
+
+				<b>Song of Songs 6:1-2</b> | <a href="tracts/SS61-2front.pdf">Front</a> / <a href="tracts/SS61-2back.pdf">Back</a><br>
+				<b>Romans 12:2</b> | <a href="tracts/Rom122front.pdf">Front</a> / <a href="tracts/Rom122back.pdf">Back</a><br>
+				<b>Romans 8:6</b> | <a href="tracts/Rom86front.pdf">Front</a> / <a href="tracts/Rom86back.pdf">Back</a><br>
+				<b>Phillipians 3:8</b> | <a href="tracts/Phil38front.pdf">Front</a> / <a href="tracts/Phil38back.pdf">Back</a><br>
+				<b>Phillipians 3:10</b> | <a href="tracts/Phil310front.pdf">Front</a> / <a href="tracts/Phil310back.pdf">Back</a><br>
+
+				<b>Ensemble:</b> <a href="http://instagram.com/p/UM2_tEmzNS">on Instagram</a> <br>
+
+		</p></div><br>
+
+		<div id="hymnsheets">
+		<h2><a name="hymnsheets">Hymn Sheets</a></h2><hr>
+			<p class="bodytext">
+
+				Another side project I worked on in my first term were gospel hymn tracts. In the FTTA, we go out regularly to preach the gospel. One approach we use to sing hymns and spiritual songs to people. After doing this a few times, my impression was that people enjoyed our singing, but they did not receive much content from it.
+
+				<br><br>
+
+				My idea was to create gospel tracts that had hymn lyrics on them. The idea was to give the tract to people, sing to them, and that way they could follow along with what we were singing. Below the hymn would be some verses or ministry materials that would show how the hymn comes from the Bible and relates to our experience, and could serve as a launchpad for us to speak something of the gospel (or for them to read later).
+
+				<br><br>
+
+				<a href="hymntracts.pdf">Gospel Hymn Tracts [PDF]</a> (5 pages)
+
+
+		</p></div><br>  
 		
 		<div id="calchat">
 		<h2><a name="calchat">CalChat</a></h2><hr>
-		<p class="bodytext">In my last semester at Cal, my friends <a href="http://jessechen.net">Jesse Chen</a>, Nelson Hoang, and I decided to enter a hackathon hosted by the UC Berkeley <a href="http://stc.berkeley.edu/">Student Technology Council</a> (STC). Our app, which we hacked together in a few hours after learning Node.JS, placed third at the competition.
+		<p class="bodytext">
+
+			In my last semester at Cal, my friends <a href="http://jessechen.net">Jesse Chen</a>, Nelson Hoang, and I decided to enter a hackathon hosted by the UC Berkeley <a href="http://stc.berkeley.edu/">Student Technology Council</a> (STC). Our app, which we hacked together in a few hours after learning Node.JS, placed third at the competition.
+
 		<br><br>
-		Later that semester, we decided to enter the STC's <a href="http://stc.berkeley.edu/competitions.htm#webappcomp">Web App Competition</a> and invited Mark Wei to join our team. Over the course of a month, we rewrote our entire app and submitted it to the competition, winning both the Grand Prize and the People's Choice Award <a href="http://inews.berkeley.edu/articles/Apr-May2012/STC-WebAppContest-winners">(link)</a>. 
+
+			Later that semester, we decided to enter the STC's <a href="http://stc.berkeley.edu/competitions.htm#webappcomp">Web App Competition</a> and invited Mark Wei to join our team. Over the course of a month, we rewrote our entire app and submitted it to the competition, winning both the Grand Prize and the People's Choice Award <a href="http://inews.berkeley.edu/articles/Apr-May2012/STC-WebAppContest-winners">(link)</a>. 
+
 		<br><br>
-		You can see our app live at: <a href="http://calchat.net">calchat.net</a> and our competition slide deck here: <a href="https://www.dropbox.com/sh/pkhyj78i4mjodkv/bDMv74456w">CalChat Presentation</a>
+			
+			You can see our app live at: <a href="http://calchat.net">calchat.net</a> and our competition slide deck here: <a href="https://www.dropbox.com/sh/c7fcrqfti9tgy57/87Zzga3wlG">CalChat Presentation</a>
+
 		</p></div><br>
 		
-		<div id="lifecheck">
+		<!-- <div id="lifecheck">
 		<h2><a name="lifecheck">LifeCheck</a></h2><hr>
 			<p class="bodytext">Currently working with Team LifeCheck: Hung Dang, Vivian Chan, <a href="http://jessechen.net">Jesse Chen</a>, Mark Wei, and Kyu Simm on bringing medical checklists to Android using NFC and other technologies. Brought onto the team as a UI/UX designer/consultant. You can check us out at <a href="http://lifecheckapp.com">lifecheckapp.com</a>!</p>
 		
-		</div><br>
+		</div><br> -->
 				
 		<div id="blindly">
 		<h2><a name="blind.ly">Blind.ly Messenger</a></h2><hr>
-			<p class="bodytext">Worked with my excellent teammates <a href="http://jessechen.net">Jesse Chen</a>, Woosuk Kim, Edmond Lo, and Mark Wei on this project for our Software Engineering (CS169) class. Our idea was to develop a text messaging client for blind users, that took morse code as input. Our unique take on the problem was to use the volume rocker buttons as the sole input method (both for navigation and text entry), to avoid the confusion and difficulty typically presented to blind users by touchscreens, which provide little to no tactile feedback.</p>
+			<p class="bodytext">
+
+				Worked with my excellent teammates <a href="http://jessechen.net">Jesse Chen</a>, Woosuk Kim, Edmond Lo, and Mark Wei on this project for our Software Engineering (CS169) class. Our idea was to develop a text messaging client for blind users, that took morse code as input. Our unique take on the problem was to use the volume rocker buttons as the sole input method (both for navigation and text entry), to avoid the confusion and difficulty typically presented to blind users by touchscreens, which provide little to no tactile feedback.</p>
 			
 				<h3><a name="blindly github">GitHub</a></h3>
+
 				<p class="bodytext">You can check the source code for our Android client here:</p>
 					
 					<a href="http://github.com/pingpongboss/Blind.ly-Messenger">Blind.ly Messenger</a>&nbsp;
 					
 				<h3><a name="blindly mockups">Mockups and Presentations</a></h3>
+
 				<p class="bodytext">Here are some of mockups and presentations I put together for our app</p>
 					
 					<a href="blindly/logo.png">logo [PNG]  </a>&nbsp;
@@ -91,7 +185,7 @@
 						
 		<div id="tribal">
 		<h2><a name="tribal">Tribal Technologies</a></h2><hr>
-			<p class="bodytext">Worked on both an Android and a Plex app for the Global Action Forum. Below are some mockups of the Androida pp</p>
+			<p class="bodytext">Worked on both an Android and a Plex app for the Global Action Forum. Below are some mockups of the Android app</p>
 			
 					<a href="gaf/videos1.png">Video Categories [PNG]  </a>&nbsp;
 					<a href="gaf/videos4.png">Videos List [PNG]  </a>&nbsp;
@@ -112,12 +206,12 @@
 					
 		</div>	<br>
 					
-		<div id="cloudtalk">
+		<!-- <div id="cloudtalk">
 		<h2><a name="cloudtalk">Cloudtalk</a></h2><hr>
 			<p class="bodytext">In the summer of 2010, I interned at a small software startup based in San Francisco. Cloudtalk (formerly Pana.ma), is a social network based around user's communicating asynchrously using recorded voice messages. I worked with the product management team to discuss feature ideas and write specs for the dev team. I also coded some proof-of-concept demos to show to the executive team. A good deal of my time was also done doing research into web trends, competing or successful web companies, and APIs of other products. Oh, and mockups too. Can't forget mockups.</p>
 			<p class="bodytext">I no longer have any of my source files from my time at Cloudtalk, but you can check out their product at <a href="http://cloudtalk.com">cloudtalk.com</a></p>
 			
-		</div>	<br>
+		</div>	<br> -->
 			
 		<div id="gloing">
 		<h2><a name="gloing">Gloing</a></h2><hr>
@@ -140,14 +234,14 @@
 					<a href="gloing/mockups/userwindow.jpg">User Window [JPG]  </a>&nbsp;
 		</div>	<br>
 		
-		<div id="ebay">
+		<!-- <div id="ebay">
 		<h2><a name="ebay">eBay</a></h2><hr>
 			<p class="bodytext">During the summer of 2008, I had the opportunity in research program run by eBay's Research Labs, called the 'Gen Y Program,' which recruited high schoolers in the Bay Area to give input on how to direct eBay's future as a product among the next generation of web users. I served as the team lead of a group of high schoolers and eventually took the top prize among 3 other teams and eventually presented to the executive team at eBay. Below are two short papers I wrote detailing my views on eBay's future as a product.</p>
 				
 				<a href="ebay/ebaysucks.rtf">eBay Sucks [RTF]</a>&nbsp;
 				<a href="ebay/featureideas.rtf">Feature Ideas [RTF]</a>&nbsp;
-		</div><br>
-		
+		</div><br> -->
+
 		<div id="coc">
 		<h2><a name="">Christians on Campus</a></h3><hr>
 			<p class="bodytext">In college, I became involved with a Christian fellowship called Christians on Campus. Since I had background in print design, I was drafted to help with some design responsbilities which included several flyers and a new club t-shirt. Below are a few of said flyers and t-shirt drafts.</p>
@@ -157,16 +251,25 @@
 					
 					<a href="coc/flyers/fall09welcomeweekcalendar.jpg" rel="lightbox">Fall 2009 Welcome Week Calendar [JPG]</a>&nbsp;
 					<a href="coc/flyers/2010welcomemtghandout.jpg" rel="lightbox">Fall 2010 Welcome Meeting Handout [JPG]</a>&nbsp;
-					
+					<a href="coc/flyers/2011celebrationmtg.pdf">Spring 2011 Celebration Meeting Hymn Sheet [PDF]</a>&nbsp;
 					
 				<h4><a name="cocshirt">T-Shirt</a></h4>
-				<p class="bodytext">A few drafts and the final design</p>
+				<p class="bodytext">A few drafts (to illustrate the design process) and the final design</p>
 					
-					<a href="coc/tshirt/draft1.jpg" rel="lightbox">Draft 1 [JPG]  </a>&nbsp;
-					<a href="coc/tshirt/draft2.jpg" rel="lightbox">Draft 2 [JPG]  </a>&nbsp;
-					<a href="coc/tshirt/draft3.jpg" rel="lightbox">Draft 3 [JPG]  </a>&nbsp;
-					<a href="coc/tshirt/draft4.jpg" rel="lightbox">Draft 4 [JPG]  </a>&nbsp;
-					<a href="coc/tshirt/final.jpg" rel="lightbox">Final [JPG]  </a>&nbsp;
+					<a href="coc/tshirt/draft1.jpg">Draft 1 [JPG]  </a>&nbsp;
+					<a href="coc/tshirt/draft2.jpg">Draft 2 [JPG]  </a>&nbsp;
+					<a href="coc/tshirt/draft3.jpg">Draft 3 [JPG]  </a>&nbsp;
+					<a href="coc/tshirt/draft4.jpg">Draft 4 [JPG]  </a>&nbsp;
+					<a href="coc/tshirt/final.jpg">Final Mockup [JPG]  </a>&nbsp;
+					<a href="coc/tshirt/finallive.jpg">Printed [JPG]  </a>&nbsp;
+
+				<h4><a name="UCO">University of Central Oklahoma</a></h4>
+				<p class="bodytext">In February of 2013, I spent two weeks volunteering with Christians on Campus at the University of Central Oklahoma (UCO) and Oklahoma State University (OSU). Part of my work there involved making some new flyers for the welcome events at UCO.</p>
+
+					<a href="coc/UCO/info.pdf">Information Handout [PDF]  </a>&nbsp;
+					<a href="coc/UCO/signup.pdf">Sign up Sheet [PDF]  </a>
+
+
 		</div><br>
 		
 		<div id="falcon">

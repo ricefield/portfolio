@@ -1,0 +1,29 @@
+ENDOPPLER VIDEO
+======================
+
+- tell a story (narration: someone)
+	- situations where you want to report an incident (ie, drunk driving, crime in progress, suspicious activity)
+		- in real time
+		- in a given location
+		
+	- notify police and community
+	
+- ENDOPPPLER is.... (Johnny - CEO)
+	- a way to empower communities and public service to work together to save lives
+	(leverage info from presentations to OPD and SFPD)
+	
+- demo client: jon (product manager)
+	- sample report (film a paper)
+		- scene 1: 	everything is fine, people standing around
+		- scene 2:	altercation occurs, whip out phone
+		- scene 3: 	focus switches to iphone, where app functionality is demonstrated
+					- pull up app from iphone home screen
+					- press alert button, confirm report
+					- record report
+					- watch report submitted
+					
+- explain server side: roger (server team)
+	- endoppler receives your report and processes it and pushes it out to other users
+	- endoppler also receives 911 alerts from the police department and pushes it out to you to keep you safe
+	
+- wrap up (narrator)
