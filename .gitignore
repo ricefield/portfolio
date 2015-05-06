@@ -18,7 +18,6 @@
 *.jar
 *.rar
 *.tar
-*.zip
 
 # Logs and databases #
 ######################
@@ -34,5 +33,4 @@ Icon?
 Thumbs.db
 
 # Misc #
-*.pdf
-*.PDF
+
